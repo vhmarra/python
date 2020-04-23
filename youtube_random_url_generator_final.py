@@ -29,4 +29,11 @@ class bot_video_youtube():
         print("video base64 id: ",last_part_url)
         self.driver.get(url)
  
+def save_link():
+     arquivo = open('YOUFILE.TXT', 'a') #open txt file
+     arquivo.write(full_url + "\n") #write the url in the file
+     arquivo.close() #close file
+
+save_link() #call function save_link
 bot = bot_video_youtube()
+
